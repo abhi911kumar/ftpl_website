@@ -1,0 +1,163 @@
+﻿extends layout
+
+block content
+	nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+		.container
+			a.navbar-brand.js-scroll-trigger(href='#page-top')
+				img(src="img/Finshkone_white.png" alt="Finshkone Logo").company_logo.full-menu
+				img(src="img/Finshkone_Logo.png" alt="Finshkone Logo").company_logo.shrink-menu
+			button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+				i.fas.fa-bars
+			#navbarResponsive.collapse.navbar-collapse
+				ul.navbar-nav.ml-auto
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#products') Products
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#services') Services
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#carrier') Carrier
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#aboutus') About Us
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#contact') Contact
+					li.nav-item
+						a.nav-link(href='#contact')
+							i.icon-social-facebook
+					li.nav-item
+						a.nav-link(href='#contact')
+							i.icon-social-twitter
+					li.nav-item
+						a.nav-link(href='#contact')
+							i.icon-social-linkedin
+					li.nav-item
+						a.nav-link(href='#contact')
+							i.icon-social-youtube
+	header.masthead
+		.container.h-100
+			.row.h-100
+				.col-lg-7.my-auto
+					.header-content.mx-auto.pt-lg-5
+						span.h1.my-lg-5 We build advance Digital 
+						br 						
+						span.h1#displaytext
+						br.d-block.d-lg-none
+						span.h1 of future.
+						br
+						.h5.my-5
+							| Since 2020, we have been building digital solutions and tools of tomorrow.
+				.col-lg-5.my-auto
+					.tech-container
+						.tech-details
+							.col-12.tech-image
+								img(src='img/techs/0 (1).png')#techimg
+							.cube(style='transform: translateZ(300px) rotateX(-10deg) rotateY(-63deg);')
+								.side.front
+								.side.back
+								.side.left
+								.side.right
+								.side.top
+								.side.bottom
+	section#products.download.bg-light.text-center
+		.container
+			.row
+				.col-md-8.mx-auto.pt-3.pb-5
+					h2.section-heading.mb-5 Our Products
+					p.text-muted Coming Soon!
+					hr
+					p.h4.my-5 
+						code Please bear with us as Our Products are getting developed currently. We will post the list once they are ready to ship.
+	section#services.features
+		.container
+			.section-heading.text-center
+				h2 Our Services
+				p.text-muted Check out what we provide as a service to the world.
+				hr
+			.row
+				.col-lg-12.my-auto
+					.container-fluid
+						.row
+							.col-lg-4
+								.feature-item
+									i.fas.fa-laptop-code.text-primary
+									h3 Enterprise Software Development									
+							.col-lg-4
+								.feature-item
+									i.fas.fa-mobile-alt.text-primary
+									h3 Mobile App Development									
+							.col-lg-4
+								.feature-item
+									i.far.fa-comment-alt.text-primary
+									h3 IT Consulting									
+						.row
+							.col-lg-4
+								.feature-item
+									i.fas.fa-paint-brush.text-primary
+									h3 UI And UX Design									
+							.col-lg-4
+								.feature-item
+									i.fas.fa-tools.text-primary
+									h3 IT DevOps									
+							.col-lg-4
+								.feature-item
+									i.fas.fa-check-circle.text-primary
+									h3 QA									
+	section#carrier.download.bg-light.text-center
+		.container
+			.row
+				.col-md-8.mx-auto.pt-3.pb-5
+					h2.section-heading.mb-5 We are Hiring!					
+					hr
+					p.h4.my-5 
+						code No update available currently. Please check back later!
+	section.cta#aboutus
+		.cta-content
+			.container
+				h2.text-weight-700.mb-5
+					| About Us				
+				p.h5
+					| Indian owned Software Company Finshkone Tech provides a range of Information Technology Services designed for business productivity. From Enterprise Software Development, Mobile App Development to Consultancy Solutions.
+					br
+					br
+					| Founded in January 2020 and headquartered in Bangalore India, to help organisations with their growth. Our focus is on providing complete digital solutions for organisations and on developing products that could solve obstacles at various domains.
+					br
+					br
+					| Today, from our base in Bangalore, we are planning to deliver the most comprehensive suite of digital solutions and services to all type of business big, medium and small.
+		.overlay
+	section#contact.contact.bg-light
+		.container
+			.row.col-12.text-center
+				.col-12.col-lg-4
+					.col-12
+						i.far.fa-comments.fa-4x
+					.col-12.mt-3
+						span.h6.text-weight-700.small LET&apos;S TALK
+					.col-12.mt-2
+						span.h6.text-muted Phone: 1234567890
+					.col-12.mt-3
+						a.small(href='tel:1234567890') CALL US
+				.col-12.col-lg-4
+					.col-12
+						i.far.fa-envelope-open.fa-4x
+					.col-12.mt-3
+						span.h6.text-weight-700.small EMAIL US
+					.col-12.mt-2
+						span.h6.text-muted mail.fktpl@finshkonetech.com
+					.col-12.mt-3
+						a.small(href='mailto:mail.fktpl@finshkonetech.com') SEND MAIL
+				.col-12.col-lg-4
+					.col-12
+						i.fas.fa-hashtag.fa-4x
+					.col-12.mt-3
+						span.h6.text-weight-700.small LET&apos;S CONNECT
+					.col-12.mt-3
+						a.btn.btn-link(href='#')
+							i.icon-social-facebook.fa-2x
+						a.btn.btn-link(href='#')
+							i.icon-social-linkedin.fa-2x
+						a.btn.btn-link(href='#')
+							i.icon-social-twitter.fa-2x
+						a.btn.btn-link(href='#')
+							i.icon-social-youtube.fa-2x
+	footer
+		.container
+			p © Finshkone Tech 2020. All Rights Reserved.
